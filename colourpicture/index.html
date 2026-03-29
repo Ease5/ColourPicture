@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Color Picker | Light & Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <button class="theme-toggle" id="themeBtn" title="Toggle Light/Dark Mode">🌓</button>
+
+    <div class="container">
+        <h1>Image Color Picker</h1>
+        <div class="upload-section">
+            <input type="file" id="upload" accept="image/*">
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="result-card">
+            <div id="swatch" style="background-color: #ffffff;"></div>
+            <div style="text-align: left;">
+                <p>HEX: <code id="hexVal">#FFFFFF</code> <button class="copy-btn" onclick="copyContent('hexVal')">Copy</button></p>
+                <p>RGB: <code id="rgbVal">255, 255, 255</code> <button class="copy-btn" onclick="copyContent('rgbVal')">Copy</button></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="social-footer">
+        <a href="https://www.youtube.com/@mongusmab" class="btn-outline" target="_blank">YouTube</a>
+        <a href="https://github.com/Ease5/ColourPicture" class="btn-outline" target="_blank">GitHub</a>
+        <a href="https://discord.gg/flatjampancake" class="btn-outline" target="_blank">Discord</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmMk8bhwPwvu52bdIk3I36r5sODWoUggKB3c0e1H4vsbZInQ/viewform?usp=header" class="btn-outline" target="_blank">Feedback</a>
+        <a href="https://github.com/Ease5/ColourPicture/blob/main/Privacy%20Policy.md" class="btn-outline" target="_blank">Privacy Policy</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

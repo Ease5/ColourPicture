@@ -1,0 +1,129 @@
+/* Variables & Themes */
+:root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --primary: #2563eb;
+    --secondary-bg: #f1f5f9;
+    --border: #e2e8f0;
+    --success: #059669;
+}
+
+[data-theme="dark"] {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f1f5f9;
+    --primary: #3b82f6;
+    --secondary-bg: #334155;
+    --border: #475569;
+}
+
+/* Layout */
+body { 
+    font-family: 'Segoe UI', system-ui, sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100vh;
+    padding: 40px 20px; 
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+
+.container { 
+    max-width: 900px; 
+    width: 100%;
+    text-align: center; 
+    background: var(--card); 
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+    flex-grow: 1;
+}
+
+/* UI Components */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-section { 
+    border: 2px dashed var(--border); 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+canvas { 
+    max-width: 100%; 
+    height: auto; 
+    cursor: crosshair; 
+    border-radius: 4px; 
+    margin-top: 10px; 
+    border: 1px solid var(--border);
+}
+
+.result-card { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 30px; 
+    padding: 20px; 
+    background: var(--secondary-bg); 
+    border-radius: 8px; 
+}
+
+#swatch { width: 80px; height: 80px; border-radius: 12px; border: 4px solid var(--card); }
+
+.copy-btn { 
+    padding: 6px 12px; 
+    background: var(--primary); 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+}
+
+.copy-btn.copied { background: var(--success); }
+
+/* Footer Links */
+.social-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.btn-outline:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}

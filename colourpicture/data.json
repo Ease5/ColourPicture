@@ -1,0 +1,12 @@
+{
+  "siteSettings": {
+    "title": "ColourPicture",
+    "description": "Upload an image and grab any HEX or RGB code instantly."
+  },
+  "socials": [
+    { "name": "YouTube", "url": "https://www.youtube.com/@mongusmab" },
+    { "name": "GitHub", "url": "https://github.com/Ease5/ColourPicture" },
+    { "name": "Discord", "url": "https://discord.gg/flatjampancake" },
+    { "name": "Feedback", "url": "https://docs.google.com/forms/d/e/1FAIpQLSdmMk8bhwPwvu52bdIk3I36r5sODWoUggKB3c0e1H4vsbZInQ/viewform?usp=header" }
+  ]
+}
